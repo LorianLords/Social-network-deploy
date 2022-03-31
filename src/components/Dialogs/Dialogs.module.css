@@ -1,0 +1,35 @@
+.dialogs{
+ display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems{
+     padding: 10px;
+}
+
+.dialogsItems .dialog a{
+ color: darkslategray;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dialog a.active {
+    color: gold;
+}
+
+.dialog a:hover{
+    color: sandybrown;
+}
+.messages {
+    padding: 10px;
+}
+
+.messages .message{
+  color: black;
+    outline: none;
+}
+
+.textarea_send{
+    padding: 10px;
+}
