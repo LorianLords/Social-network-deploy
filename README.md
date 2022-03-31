@@ -1,6 +1,6 @@
-#Social network
+# Social network
 
-##This is one of my one of the projects being developed for study
+## This is one of my one of the projects being developed for study
 
 
 # Getting Started with Create React App
