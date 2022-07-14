@@ -8,7 +8,6 @@ import store from "./redux-store/redux-store";
 import {Provider} from "react-redux";
 
 export let rerenderEntireTree = (state) => {
-    console.log(store)
     ReactDOM.render(
         <React.StrictMode>
             <Provider store={store}>

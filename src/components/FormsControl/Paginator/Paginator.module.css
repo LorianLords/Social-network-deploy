@@ -1,0 +1,11 @@
+.selected {
+    font-weight: bold;
+}
+
+.number_page {
+    cursor: pointer;
+}
+
+.paginator {
+
+}

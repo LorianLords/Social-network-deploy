@@ -1,19 +1,47 @@
 import s from './Profile.module.css'
-import MyPost from "./MyPost/MyPost";
-import MyPostContainer from "./MyPost/MyPostContainer";
-const Profile = (props) => {     // Компонента
+import Post from "./Posts/Post";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import {ErrorMessage, Field, Form, Formik} from "formik";
+import React from "react";
 
+import styles from "../FormsControl/FormControl.module.css";
+import TextareaSchema from "../FormValidation/FieldsSchema";
+
+
+const Profile = ({stateProfile,addPostActionCreator,profile, status, updateStatus}) => {     // Компонента
+
+    let postItems = stateProfile.postData.map( post =>   <Post message={post.message} likes ={post.likes} key={post.id} />)
+
+    const onAddPost = (values, { setSubmitting }) => {
+        setTimeout(() => {
+            alert(JSON.stringify(values, null, 2))
+            addPostActionCreator(values.textareaBody);
+            setSubmitting(false)
+        }, 400)
+    }
     return (
-        <div className={'profile'}>
-            <img
-                src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
-                alt=""/>
-            <MyPostContainer /*store={props.store}*/
-                /*posts={props.profilePage.postData}
-                newPostText={props.profilePage.newPostText}
-                dispatch={props.dispatch}*/
-                /* addPost={props.addPost}
-                updatePostText={props.updatePostText}*//>
+        <div className={s.profile}>
+           <ProfileInfo profile={profile} status={status} updateStatus={updateStatus}/>
+
+            <Formik
+                initialValues={{ textareaBody: '', withBlur: ''}}
+                validationSchema={TextareaSchema}
+                onSubmit={onAddPost}
+            >
+                {({ isSubmitting, touched, errors, handleBlur }) => (
+                    <Form className={touched.textareaBody &&  errors.textareaBody? styles.error : ""}>
+                        <div>
+                            <Field component='textarea'  name="textareaBody" placeholder={'Write your post..'} />
+                        </div>
+                            <ErrorMessage name="textareaBody" component="div"/>
+
+                        <button type="submit" disabled={isSubmitting}>
+                            Send
+                        </button>
+                    </Form>
+                )}
+            </Formik>
+            {postItems}
         </div>
     );
 }
