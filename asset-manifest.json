@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Social-network-deploy/static/css/main.13b155b3.css",
+    "main.js": "/Social-network-deploy/static/js/main.af9e68cf.js",
+    "static/css/563.8559204c.chunk.css": "/Social-network-deploy/static/css/563.8559204c.chunk.css",
+    "static/js/563.99b3a7b4.chunk.js": "/Social-network-deploy/static/js/563.99b3a7b4.chunk.js",
+    "static/css/930.8fd6e5f3.chunk.css": "/Social-network-deploy/static/css/930.8fd6e5f3.chunk.css",
+    "static/js/930.9d1afcaf.chunk.js": "/Social-network-deploy/static/js/930.9d1afcaf.chunk.js",
+    "static/css/543.a6b47380.chunk.css": "/Social-network-deploy/static/css/543.a6b47380.chunk.css",
+    "static/js/543.5a915023.chunk.js": "/Social-network-deploy/static/js/543.5a915023.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Social-network-deploy/static/js/787.28cb0dcd.chunk.js",
+    "static/media/ava.png": "/Social-network-deploy/static/media/ava.00d92f05e4fec182b3f6.png",
+    "index.html": "/Social-network-deploy/index.html",
+    "static/media/loader.svg": "/Social-network-deploy/static/media/loader.a4662b5e8940be61f962a2b65adb94e4.svg",
+    "main.13b155b3.css.map": "/Social-network-deploy/static/css/main.13b155b3.css.map",
+    "main.af9e68cf.js.map": "/Social-network-deploy/static/js/main.af9e68cf.js.map",
+    "563.8559204c.chunk.css.map": "/Social-network-deploy/static/css/563.8559204c.chunk.css.map",
+    "563.99b3a7b4.chunk.js.map": "/Social-network-deploy/static/js/563.99b3a7b4.chunk.js.map",
+    "930.8fd6e5f3.chunk.css.map": "/Social-network-deploy/static/css/930.8fd6e5f3.chunk.css.map",
+    "930.9d1afcaf.chunk.js.map": "/Social-network-deploy/static/js/930.9d1afcaf.chunk.js.map",
+    "543.a6b47380.chunk.css.map": "/Social-network-deploy/static/css/543.a6b47380.chunk.css.map",
+    "543.5a915023.chunk.js.map": "/Social-network-deploy/static/js/543.5a915023.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Social-network-deploy/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13b155b3.css",
+    "static/js/main.af9e68cf.js"
+  ]
+}
